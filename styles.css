@@ -131,3 +131,13 @@ body.modal-open { overflow: hidden; }
   .hero-inner { padding-top: 140px; }
   .modal-inner { padding: 32px; }
 }
+/* Universal media inside work cards (images + video) */
+.work-card img,
+.work-card video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 16px;
+}
