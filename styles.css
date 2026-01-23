@@ -123,14 +123,6 @@ img { max-width: 100%; display: block; }
 /* Lock scroll when modal open */
 body.modal-open { overflow: hidden; }
 
-/* ======================
-   Responsive
-====================== */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 40px; }
-  .hero-inner { padding-top: 140px; }
-  .modal-inner { padding: 32px; }
-}
 /* Universal media inside work cards (images + video) */
 .work-card img,
 .work-card video {
