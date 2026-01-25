@@ -133,3 +133,19 @@ body.modal-open { overflow: hidden; }
   display: block;
   margin-bottom: 16px;
 }
+
+/* Responsive Behance embed inside modal */
+.modal-media {
+  width: 100%;
+  height: 70vh;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.modal-media iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
