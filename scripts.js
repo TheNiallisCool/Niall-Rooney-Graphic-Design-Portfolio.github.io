@@ -85,5 +85,40 @@ function animate() {
 
 // Start the animation
 animate();
+/* ---------- VIMEO CONTROL ---------- */
+const iframe = document.getElementById('vimeoPlayer');
+let player;
+
+if (iframe) {
+  player = new Vimeo.Player(iframe);
+}
+
+// When modal opens → play video
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    if (card.dataset.modal === "modal-2" && player) {
+      player.play();
+    }
+  });
+});
+
+// When modal closes → pause & reset
+closeBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (player) {
+      player.pause();
+      player.setCurrentTime(0);
+    }
+  });
+});
+
+modals.forEach(modal => {
+  modal.addEventListener("click", e => {
+    if (e.target === modal && player) {
+      player.pause();
+      player.setCurrentTime(0);
+    }
+  });
+});
 
 
